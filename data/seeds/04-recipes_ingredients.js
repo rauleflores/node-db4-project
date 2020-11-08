@@ -1,0 +1,26 @@
+exports.seed = function (knex) {
+  return knex("recipes_ingredients").insert([
+    { recipe_id: 1, ingredient_id: 4, quantity: 2, quantity_type: "slices" },
+    { recipe_id: 1, ingredient_id: 5, quantity: 4, quantity_type: "oz" },
+    { recipe_id: 1, ingredient_id: 6, quantity: 9, quantity_type: "slices" },
+    { recipe_id: 1, ingredient_id: 7, quantity: 5, quantity_type: "leaves" },
+    { recipe_id: 1, ingredient_id: 12, quantity: 1, quantity_type: "cup" },
+    { recipe_id: 2, ingredient_id: 8, quantity: 2, quantity_type: "litres" },
+    { recipe_id: 2, ingredient_id: 9, quantity: 0.5, quantity_type: "box" },
+    { recipe_id: 2, ingredient_id: 12, quantity: 1, quantity_type: "cup" },
+    { recipe_id: 3, ingredient_id: 10, quantity: 30, quantity_type: "each" },
+    { recipe_id: 3, ingredient_id: 11, quantity: 5, quantity_type: "cups" },
+    { recipe_id: 3, ingredient_id: 2, quantity: 10, quantity_type: "litres" },
+    { recipe_id: 3, ingredient_id: 3, quantity: 2.5, quantity_type: "cups" },
+    { recipe_id: 3, ingredient_id: 12, quantity: 1, quantity_type: "cup" },
+    { recipe_id: 4, ingredient_id: 4, quantity: 2, quantity_type: "slices" },
+    { recipe_id: 4, ingredient_id: 11, quantity: 2, quantity_type: "oz" },
+    { recipe_id: 4, ingredient_id: 12, quantity: 1, quantity_type: "cup" },
+    { recipe_id: 5, ingredient_id: 1, quantity: 7, quantity_type: "cups" },
+    { recipe_id: 5, ingredient_id: 2, quantity: 2, quantity_type: "quarts" },
+    { recipe_id: 5, ingredient_id: 3, quantity: 2, quantity_type: "cups" },
+    { recipe_id: 5, ingredient_id: 8, quantity: 32, quantity_type: "oz" },
+    { recipe_id: 5, ingredient_id: 11, quantity: 5, quantity_type: "oz" },
+    { recipe_id: 5, ingredient_id: 12, quantity: 1, quantity_type: "cup" },
+  ]);
+};
